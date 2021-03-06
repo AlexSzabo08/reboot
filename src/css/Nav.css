@@ -1,6 +1,10 @@
 nav {
-    position: absolute;
     height: 100px;
     width: 100vw;
+    position: fixed;
     background-color: #3D5452;
+}
+
+nav img {
+    margin-left: 5%;
 }

@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { ethers } from 'ethers'
 
 import Hero from './components/Hero' 
+import Nav from './components/Nav'
 import "./css/App.css";
 
 function App() {
@@ -15,9 +16,10 @@ function App() {
   }, [])
   return (
     <div>
+      <Nav />
       <Hero/>
     </div>
-  );
+  )
 }
 
 export default App;
