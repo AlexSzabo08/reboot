@@ -112,6 +112,10 @@
   cursor: pointer;
 }
 
+.paralelogramButton:hover{
+  cursor: pointer;
+}
+
 .paralelogram-2{
   position: relative; 
   height: 100px; 
@@ -119,7 +123,21 @@
   background-color: #1c2726; 
   transform: skew(-20deg); 
   -webkit-transform: skew(-20deg); 
+  margin-right: 0px;
 }
+
+.paralelogramButton{
+  position: relative;
+  border-style: solid;
+  border-color: #1c2726; 
+  height: 95px; 
+  width: 100px; 
+  margin-left: 0px;
+  background-color: #b2fefe; 
+  transform: skew(-20deg); 
+  -webkit-transform: skew(-20deg); 
+}
+
 .paralelogram:hover{
   cursor: pointer;
 }
@@ -131,6 +149,7 @@
   cursor: pointer;
 }
 
+
 .paralelogramText{
   transform: skew(+20deg); 
   -webkit-transform: skew(+20deg);
@@ -138,4 +157,29 @@
   padding-left: 35%;
   font-size: 27px;
   color: #b2fefe;
+}
+.paralelogramInputText{
+  transform: skew(+20deg); 
+  -webkit-transform: skew(+20deg);
+  font-size: 27px;
+  padding-left: 15px;
+  padding-top: 8px;
+  color: #1c2726;
+}
+.formInput{
+  transform: skew(+20deg); 
+  -webkit-transform: skew(+20deg);
+  background-color: #1c00ff00;
+  height: 100px;
+  color: #b2fefe;
+  font-size: 27px;
+  border-style: none;
+  width: 200px;
+  
+}:focus {
+  outline: none;
+}
+
+.flex{
+  display: flex;
 }

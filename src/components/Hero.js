@@ -1,7 +1,14 @@
-import React from "react";
+import {React, useState} from "react";
 import "../css/Hero.css";
 import Logo from "../img/logo.png";
-export default function hero() {
+import Signup from "./Signup";
+import Form from "./Form";
+export default function Hero() {
+  const [signUp, toggleSignUp] = useState(false);
+  function toggle() {
+    toggleSignUp(true);
+  }
+
   return (
     <div className="background">
       <div className="wrapper">
@@ -12,9 +19,14 @@ export default function hero() {
           <p className="motto">We don't want your data.</p>
         </div>
         <div className="three">
-              <div className="paralelogram"><p className="paralelogramText"><b>Log in</b></p></div>
-              <hr className="invisible"></hr>
-              <div className="paralelogram-2"><p className="paralelogramText"><b>Sign up</b></p></div>
+          <div className="paralelogram">
+            <p className="paralelogramText">
+              <b>Log in</b>
+            </p>
+          </div>
+          <hr className="invisible"></hr>
+          <Signup signUp={signUp} onClick={toggleSignUp}/>
+          <Form signUp={signUp}/>
         </div>
       </div>
     </div>
