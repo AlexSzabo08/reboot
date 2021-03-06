@@ -106,7 +106,13 @@
   background-color: #1c2726; 
   transform: skew(-20deg); 
   -webkit-transform: skew(-20deg); 
-}.paralelogram-2{
+}
+
+.paralelogram:hover{
+  cursor: pointer;
+}
+
+.paralelogram-2{
   position: relative; 
   height: 100px; 
   width: 205px; 
@@ -117,6 +123,10 @@
 .paralelogram:hover{
   cursor: pointer;
 }
+.paralelogram-2:hover{
+  cursor: pointer;
+}
+
 .paralelogram-2:hover{
   cursor: pointer;
 }

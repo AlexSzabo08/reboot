@@ -1,15 +1,13 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.7.0;
+import "./Profile.sol";
+import "./Post.sol";
 
-contract Reboot {
-    string variabila = "lean";
-    uint8 nr = 1;
-
-    function str(string memory _string) public view returns(string memory) {
-        return _string;
-    }
-
-    function nmb(uint8 _nr) public {
-        nr = _nr;
+contract Reboot is Profile, Post {
+    function hasProfile() public view returns(bool){
+        if(bytes(Profile.profile[msg.sender].name).length > 0)
+            return true;
+        else
+            return false;
     }
 }
