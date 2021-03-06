@@ -12,9 +12,9 @@ export default function hero() {
           <p className="motto">We don't want your data.</p>
         </div>
         <div className="three">
-              <button className="button">Log in</button>
+              <div className="paralelogram"><p className="paralelogramText"><b>Log in</b></p></div>
               <hr className="invisible"></hr>
-              <button className="button">Sign up</button>
+              <div className="paralelogram-2"><p className="paralelogramText"><b>Sign up</b></p></div>
         </div>
       </div>
     </div>
