@@ -1,7 +1,8 @@
 import { useEffect } from 'react'
 import { ethers } from 'ethers'
 
-import Hero from './components/Hero' 
+import Hero from './components/Hero'
+import Post from './components/Post' 
 import "./css/App.css";
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
   }, [])
   return (
     <div>
-      <Hero/>
+      <Post/>
     </div>
   );
 }

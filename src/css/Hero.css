@@ -114,6 +114,12 @@
   transform: skew(-20deg); 
   -webkit-transform: skew(-20deg); 
 }
+.paralelogram:hover{
+  cursor: pointer;
+}
+.paralelogram-2:hover{
+  cursor: pointer;
+}
 
 .paralelogramText{
   transform: skew(+20deg); 

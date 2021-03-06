@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+.background-post{
+    background-color: #374D4B;
+}
+.profilePic{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.postText{
+    font-family: "Roboto", sans-serif;
+    color: #C9D1D9;
+    font-size: 15px;
+}
+.wrapper-post {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .a {
+    display: flex;
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 1px;
+  }
+  .textDescription {
+    font-family: "Roboto", sans-serif;
+    margin-top: 1px;
+    padding-left: 45px;
+    font-size: 20px;
+    color:white;
+  }
+  .postLine{
+      color:#434952;
+  }
+  .c {
+    padding-top: 15%;
+    padding-left: 20%;
+    grid-row: 2;
+    grid-column: 2/2;
+  }
+  .d {
+    grid-column: 1/3;
+    grid-row: 1;
+    padding-top: 50px;
+  }
+  .e {
+    grid-column: 2/3;
+    grid-row: 1;
+    padding-top: 50px;
+  }
+  .f {
+    grid-column: 3/3;
+    grid-row: 1;
+    padding-top: 50px;
+  }
