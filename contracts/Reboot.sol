@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.7.0;
 
-contract Rebot {
+contract Reboot {
     string variabila = "lean";
     uint8 nr = 1;
 
