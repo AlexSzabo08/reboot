@@ -2,10 +2,11 @@ import { useEffect, useState } from 'react'
 import { ethers } from 'ethers'
 
 import Main from "./components/Main"
+import Writepost from "./components/Writepost"
 import "./css/App.css";
 
 function App() {
-  const [contracts, setContracts] = useState({
+/*  const [contracts, setContracts] = useState({
     reboot: null,
     post: null,
     profile: null
@@ -63,13 +64,17 @@ function App() {
       profile: profileContract
     })
     
-  }, [])
+  }, [])*/
 
   return (
     <div>
+<<<<<<< HEAD
       <Main contracts={ contracts }/>
       <Nav profile={contracts.profile}/>
       <Hero />
+=======
+      <Writepost/>
+>>>>>>> 4a8010751463d2b1ba0d50daeec5c085368b94c1
     </div>
   )
 }

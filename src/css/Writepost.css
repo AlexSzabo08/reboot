@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+.background-post{
+    background-color: #3d5452;
+}
+.profilePic{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.newPostTitle{
+    font-family: "Roboto", sans-serif;
+    color: #C9D1D9;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.postWindow{
+  width: 700px;
+  height: 700px;
+  background-color: #293a38;
+  position: absolute;
+  transform:translate(80%,20%);
+}
+.background{
+    background-color: #00000060;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+
+.bar{
+    display: flex;
+    margin-left: 150px;
+}
+
+.titleText{
+    font-family: "Roboto", sans-serif;
+    color: #C9D1D9;
+    font-size: 15px;
+    text-align: center;
+}
+.invisible {
+  color: #1c00ff00;
+}
+
+
+.paralelogramText{
+    font-size: 20px;
+    color: #b2fefe;
+    text-align: center;
+    text-justify: center;
+
+    transform: skew(+20deg); 
+    -webkit-transform: skew(+20deg); 
+  }
+.paralelogram{ 
+    position: relative; 
+    height: 60px; 
+    width: 100px; 
+    background-color: #1c2726; 
+    transform: skew(-20deg); 
+    -webkit-transform: skew(-20deg); 
+  }
+
+  .paralelogram:hover{
+    cursor: pointer;
+  }
+
+  .paralelogramButton{
+    position: relative;
+    border-style: solid;
+    border-color: #1c2726; 
+    height: 54px; 
+    width: 100px; 
+    transform: skew(-20deg); 
+    -webkit-transform: skew(-20deg); 
+  }    
+  .paralelogramButton:hover{
+    cursor: pointer;
+  }
