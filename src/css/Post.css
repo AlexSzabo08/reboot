@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 .background-post{
-    background-color: #374D4B;
+    background-color: #3d5452;
 }
 .profilePic{
     border-radius: 50%;
@@ -15,6 +15,10 @@
     font-family: "Roboto", sans-serif;
     color: #C9D1D9;
     font-size: 15px;
+}
+.postContent{
+  width: 700px;
+  height: min-content;
 }
 .wrapper-post {
     display: grid;
@@ -58,3 +62,8 @@
     grid-row: 1;
     padding-top: 50px;
   }
+
+
+.invisible {
+  color: #1c00ff00;
+}
