@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/Writepost.css";
 import IPFS from 'ipfs-api'
-export default function hero() {
+export default function hero() {/*
   const uploadFile = async (event) =>{
     const [state, setstate] = useState('')
     const [postType,setPostType] = useState('')
@@ -23,9 +23,9 @@ export default function hero() {
     
 
   }
-
+*/
   function input(event){
-    setstate(event.target.value)
+    //setstate(event.target.value)
   }
   return (
     <div className="background">
@@ -49,7 +49,7 @@ export default function hero() {
           </div>
         </div>
         <hr className="invisible"></hr>
-        <input value={state} onChange={input}></input>
+        <input /*value={state} */onChange={input} className="descriptionInput" placeholder="Write a short description..."></input>
         <div className="paralelogram">
           <p className="paralelogramText"><input type="file" onClick/>Upload your photo</p>
         </div>

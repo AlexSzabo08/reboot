@@ -3,7 +3,8 @@ import "../css/Main.css";
 import Nav from "./Nav";
 import Post from "./Post";
 import Photo from "./Photo";
-export default function Hero() {
+export default function Hero(props) {
+  const [posts, setPosts] = useState("");
   const [signUp, toggleSignUp] = useState(false);
   function toggle() {
     toggleSignUp(true);
@@ -14,17 +15,18 @@ export default function Hero() {
       const post = props.contracts.posts
       let i = await post.getLastPost()
       
-      let posts = []
+      var pOsts = []
       while(i > 0){
         let description = await post.getDescription(i)
         let postType = await post.getPostType(i)
         let postHash = await post.getPostHash(i)
         let likes = await post.getLikes(i)
-        posts.push(<Post description={description} postType={postType}
+        pOsts.push(<Post description={description} postType={postType}
         postHash={postHash} likes={likes}/>)
-        i --;
+        i = i-1;
       }
-
+      console.log(pOsts)
+      setPosts(pOsts)
     }
   }, [])
 
@@ -34,8 +36,7 @@ export default function Hero() {
       <div className="background">
         <div className="wrapper-feed">
           <div className="doi">
-              <Post/> 
-              <Post/>
+            {posts}
           </div>
         </div>
       </div>

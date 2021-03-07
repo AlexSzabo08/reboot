@@ -83,3 +83,15 @@
   .paralelogramButton:hover{
     cursor: pointer;
   }
+
+  .descriptionInput{
+      background-color: #1c2726;
+      border-style: solid;
+      border-color: rgba(0, 0, 0, 0.4);
+      width: 80%;
+      height: 60px;
+      font-size: 35px;
+      text-align: center;
+      color: #b2fefe;
+      margin-left: 10%;
+  }
