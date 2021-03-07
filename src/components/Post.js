@@ -3,7 +3,7 @@ import "../css/Post.css";
 import ProfilePic from "../img/profilepic.jpg";
 import Photo from "./Photo";
 import Video from "./Video";
-export default function hero() {
+export default function hero(props) {
   return (
     <div className="background-post">
       <div className="a">

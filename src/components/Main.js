@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 import "../css/Main.css";
 import Nav from "./Nav";
 import Post from "./Post";
@@ -8,6 +8,25 @@ export default function Hero() {
   function toggle() {
     toggleSignUp(true);
   }
+
+  useEffect(() => {
+    return async () => {
+      const post = props.contracts.posts
+      let i = await post.getLastPost()
+      
+      let posts = []
+      while(i > 0){
+        let description = await post.getDescription(i)
+        let postType = await post.getPostType(i)
+        let postHash = await post.getPostHash(i)
+        let likes = await post.getLikes(i)
+        posts.push(<Post description={description} postType={postType}
+        postHash={postHash} likes={likes}/>)
+        i --;
+      }
+
+    }
+  }, [])
 
   return (
     <div>

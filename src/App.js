@@ -67,12 +67,9 @@ function App() {
 
   return (
     <div>
-<<<<<<< HEAD
-      <Main/>
-=======
-      <Nav/>
-      <Hero contracts={ contracts }/>
->>>>>>> 9081d2a34089179ab593dedff4a5f95f3bd83e8b
+      <Main contracts={ contracts }/>
+      <Nav profile={contracts.profile}/>
+      <Hero />
     </div>
   )
 }
