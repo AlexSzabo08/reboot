@@ -11,7 +11,7 @@ contract Post is Profile{
         string description;
         string postType;
         string postHash;
-        uint256 like;
+        uint256 likes;
         uint8 tags;
     }
     
@@ -44,10 +44,38 @@ contract Post is Profile{
     function like(uint256 _id) public returns(bool){
         if(!liked[msg.sender][_id]){
             liked[msg.sender][_id] = true;
-            post[_id].like += 1;
+            post[_id].likes += 1;
             return true;
         }
         return false;
+    }
+    
+    function getLastPost() public view returns(uint256){
+        return postId;
+    }
+    
+    function getDescription(uint256 _id) public view returns(string memory){
+        return post[_id].description;
+    }
+    
+    function getPostType(uint256 _id) public view returns(string memory){
+        return post[_id].postType;
+    }
+    
+    function getPostHash(uint256 _id) public view returns(string memory){
+        return post[_id].postHash;
+    }
+    
+    function getLikes(uint256 _id) public view returns(uint256){
+        return post[_id].likes;
+    }
+    
+    function getTags(uint256 _id) public view returns(uint8){
+        return post[_id].tags;
+    }
+    
+    function getPostTag(uint256 _post, uint8 _tag) public view returns(string memory){
+        return tag[_post][_tag];
     }
     
     

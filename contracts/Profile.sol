@@ -37,5 +37,24 @@ contract Profile {
         tag[msg.sender][_profile.tags] = _str;
     }
     
+    function getUsername() public view returns(string memory){
+        return profile[msg.sender].name;
+    }
+    
+    function getPic() public view returns(string memory){
+        return profile[msg.sender].pic;
+    }
+    
+    function getBio() public view returns(string memory){
+        return profile[msg.sender].bio;
+    }
+    
+    function getTags() public view returns(uint8){
+        return profile[msg.sender].tags;
+    }
+    
+    function getTag(uint8 _id) public view returns(string memory){
+        return tag[msg.sender][_id];
+    }
 }
 

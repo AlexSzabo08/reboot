@@ -3,7 +3,7 @@ import "../css/Hero.css";
 import Logo from "../img/logo.png";
 import Signup from "./Signup";
 import Form from "./Form";
-export default function Hero() {
+export default function Hero(props) {
   const [signUp, toggleSignUp] = useState(false);
   function toggle() {
     toggleSignUp(true);
@@ -26,7 +26,7 @@ export default function Hero() {
           </div>
           <hr className="invisible"></hr>
           <Signup signUp={signUp} onClick={toggleSignUp}/>
-          <Form signUp={signUp}/>
+          <Form signUp={signUp} contracts={ props.contracts }/>
         </div>
       </div>
     </div>
